@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Payment Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+  <main class="login-box">
+    <div class="login-head">
+      <h1>PAYMENT TRACKER</h1>
+      <p id="loginSub">SIGN IN</p>
+    </div>
+
+    <form id="loginForm" autocomplete="off">
+      <div class="field">
+        <label for="username">Username</label>
+        <input type="text" id="username" required autocomplete="username">
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" required autocomplete="current-password">
+      </div>
+
+      <p class="msg" id="msg" role="alert" hidden></p>
+
+      <button type="submit" class="btn btn-solid btn-full" id="loginBtn">LOGIN</button>
+    </form>
+
+    <p class="login-note" id="loginNote">Authorized access only.</p>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
